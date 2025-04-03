@@ -11,6 +11,8 @@ let protocolHandler:
   | undefined;
 
 export function setupProtocolHandler(win: BrowserWindow) {
+
+  
   if (process.defaultApp && process.argv.length >= 2) {
     app.setAsDefaultProtocolClient(APP_PROTOCOL, process.execPath, [
       path.resolve(process.argv[1]),

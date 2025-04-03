@@ -71,6 +71,8 @@ export const mainMenuTemplate = async (
   const { navigationHistory } = win.webContents;
   await loadAllMenuPlugins(win);
 
+  
+
   const menuResult = Object.entries(getAllMenuTemplate()).map(
     ([id, template]) => {
       const plugin = allPlugins[id];
